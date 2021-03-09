@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Habaripay.ShopsRUs.Data\Habaripay.ShopsRUs.Data.csproj" />
+    <ProjectReference Include="..\Habaripay.ShopsRUs.Domain\Habaripay.ShopsRUs.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

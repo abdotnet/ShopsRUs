@@ -1,0 +1,17 @@
+C:\Apps\Habaripay.ShopsRUs\Habaripay.ShopsRUs.Service\bin\Debug\net5.0\Habaripay.ShopsRUs.Service.deps.json
+C:\Apps\Habaripay.ShopsRUs\Habaripay.ShopsRUs.Service\bin\Debug\net5.0\Habaripay.ShopsRUs.Service.dll
+C:\Apps\Habaripay.ShopsRUs\Habaripay.ShopsRUs.Service\bin\Debug\net5.0\ref\Habaripay.ShopsRUs.Service.dll
+C:\Apps\Habaripay.ShopsRUs\Habaripay.ShopsRUs.Service\bin\Debug\net5.0\Habaripay.ShopsRUs.Service.pdb
+C:\Apps\Habaripay.ShopsRUs\Habaripay.ShopsRUs.Service\bin\Debug\net5.0\Habaripay.ShopsRUs.Data.dll
+C:\Apps\Habaripay.ShopsRUs\Habaripay.ShopsRUs.Service\bin\Debug\net5.0\Habaripay.ShopsRUs.Domain.dll
+C:\Apps\Habaripay.ShopsRUs\Habaripay.ShopsRUs.Service\bin\Debug\net5.0\Habaripay.ShopsRUs.Data.pdb
+C:\Apps\Habaripay.ShopsRUs\Habaripay.ShopsRUs.Service\bin\Debug\net5.0\Habaripay.ShopsRUs.Domain.pdb
+C:\Apps\Habaripay.ShopsRUs\Habaripay.ShopsRUs.Service\obj\Debug\net5.0\Habaripay.ShopsRUs.Service.csprojAssemblyReference.cache
+C:\Apps\Habaripay.ShopsRUs\Habaripay.ShopsRUs.Service\obj\Debug\net5.0\Habaripay.ShopsRUs.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Apps\Habaripay.ShopsRUs\Habaripay.ShopsRUs.Service\obj\Debug\net5.0\Habaripay.ShopsRUs.Service.AssemblyInfoInputs.cache
+C:\Apps\Habaripay.ShopsRUs\Habaripay.ShopsRUs.Service\obj\Debug\net5.0\Habaripay.ShopsRUs.Service.AssemblyInfo.cs
+C:\Apps\Habaripay.ShopsRUs\Habaripay.ShopsRUs.Service\obj\Debug\net5.0\Habaripay.ShopsRUs.Service.csproj.CoreCompileInputs.cache
+C:\Apps\Habaripay.ShopsRUs\Habaripay.ShopsRUs.Service\obj\Debug\net5.0\Habaripay.ShopsRUs.Service.csproj.CopyComplete
+C:\Apps\Habaripay.ShopsRUs\Habaripay.ShopsRUs.Service\obj\Debug\net5.0\Habaripay.ShopsRUs.Service.dll
+C:\Apps\Habaripay.ShopsRUs\Habaripay.ShopsRUs.Service\obj\Debug\net5.0\ref\Habaripay.ShopsRUs.Service.dll
+C:\Apps\Habaripay.ShopsRUs\Habaripay.ShopsRUs.Service\obj\Debug\net5.0\Habaripay.ShopsRUs.Service.pdb

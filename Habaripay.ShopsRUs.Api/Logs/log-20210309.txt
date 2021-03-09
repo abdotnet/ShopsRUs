@@ -1,0 +1,392 @@
+2021-03-09 05:24:48.589 +01:00 [Information] Starting web host
+2021-03-09 05:45:02.409 +01:00 [Information] Starting web host
+2021-03-09 05:47:21.000 +01:00 [Information] Starting web host
+2021-03-09 05:48:47.487 +01:00 [Information] Request: InvoiceRequest { CustomerId: 1, Amount: 10, ItemPurchased: "groceriess" }
+2021-03-09 05:48:47.903 +01:00 [Information] Response: InvoiceResponse { Id: 0, CustomerId: 1, InvoiceNo: "INV-11A9B73A", InvoiceDate: 03/09/2021 05:48:47, TotalAmount: 10, DiscountedAmount: 0, TotalPayeableAmount: 10, ItemPurchasedCategory: "groceriess" }
+2021-03-09 05:49:31.087 +01:00 [Information] Request: InvoiceRequest { CustomerId: 1, Amount: 100, ItemPurchased: "groceriess" }
+2021-03-09 05:50:32.503 +01:00 [Information] Starting web host
+2021-03-09 05:52:10.792 +01:00 [Information] Request: InvoiceRequest { CustomerId: 1, Amount: 100, ItemPurchased: "groceriess" }
+2021-03-09 05:52:45.014 +01:00 [Information] Starting web host
+2021-03-09 05:53:06.423 +01:00 [Information] Request: InvoiceRequest { CustomerId: 1, Amount: 100, ItemPurchased: "groceriess" }
+2021-03-09 05:57:14.023 +01:00 [Information] Starting web host
+2021-03-09 05:57:49.137 +01:00 [Information] Request: InvoiceRequest { CustomerId: 1, Amount: 100, ItemPurchased: "groceriess" }
+2021-03-09 05:58:31.726 +01:00 [Information] Response: InvoiceResponse { Id: 0, CustomerId: 1, InvoiceNo: "INV-F8C3DCDC", InvoiceDate: 03/09/2021 05:58:31, TotalAmount: 100, DiscountedAmount: 5.0, TotalPayeableAmount: 95.0, ItemPurchasedCategory: "groceriess" }
+2021-03-09 06:00:14.342 +01:00 [Information] Starting web host
+2021-03-09 06:00:52.788 +01:00 [Information] Request: InvoiceRequest { CustomerId: 1, Amount: 100, ItemPurchased: "food" }
+2021-03-09 06:02:03.311 +01:00 [Information] Response: InvoiceResponse { Id: 0, CustomerId: 1, InvoiceNo: "INV-EA34BB83", InvoiceDate: 03/09/2021 06:02:03, TotalAmount: 100, DiscountedAmount: 10.0, TotalPayeableAmount: 90.0, ItemPurchasedCategory: "food" }
+2021-03-09 06:02:59.703 +01:00 [Information] Starting web host
+2021-03-09 06:03:37.924 +01:00 [Information] Request: InvoiceRequest { CustomerId: 2, Amount: 120, ItemPurchased: "food" }
+2021-03-09 06:04:50.899 +01:00 [Error] An unhandled exception has occurred while executing the request.
+System.Exception: Customer not found
+   at Habaripay.ShopsRUs.Service.CustomerRepo.CustomerRepository.GetCustomerByAffiliateOfStore(Int64 customerId) in C:\Apps\Habaripay.ShopsRUs\Habaripay.ShopsRUs.Service\Repository\CustomerRepo\CustomerRepository.cs:line 67
+   at Habaripay.ShopsRUs.Service.InvoiceService.GetAffiliateCustomer(InvoiceRequest request, Discount discount) in C:\Apps\Habaripay.ShopsRUs\Habaripay.ShopsRUs.Service\Services\InvoiceService.cs:line 124
+   at Habaripay.ShopsRUs.Service.InvoiceService.GetTotalInvoiceAmount(InvoiceRequest request) in C:\Apps\Habaripay.ShopsRUs\Habaripay.ShopsRUs.Service\Services\InvoiceService.cs:line 66
+   at Habaripay.ShopsRUs.Api.Controllers.V1.InvoiceController.CreateDiscount(InvoiceRequest model) in C:\Apps\Habaripay.ShopsRUs\Habaripay.ShopsRUs.Api\Controllers\V1\InvoiceController.cs:line 34
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2021-03-09 06:06:41.081 +01:00 [Information] Starting web host
+2021-03-09 06:07:08.908 +01:00 [Information] Request: InvoiceRequest { CustomerId: 2, Amount: 120, ItemPurchased: "food" }
+2021-03-09 06:09:01.126 +01:00 [Information] Starting web host
+2021-03-09 06:09:21.761 +01:00 [Information] Request: InvoiceRequest { CustomerId: 2, Amount: 120, ItemPurchased: "food" }
+2021-03-09 06:09:55.310 +01:00 [Information] Response: InvoiceResponse { CustomerId: 2, InvoiceNo: "INV-CBC5D7E2", InvoiceDate: 03/09/2021 06:09:55, TotalAmount: 120, DiscountedAmount: 36.0, TotalPayeableAmount: 84.0, ItemPurchasedCategory: "food" }
+2021-03-09 06:38:45.605 +01:00 [Information] Starting web host
+2021-03-09 06:38:48.041 +01:00 [Error] Failed executing DbCommand ("8"ms) [Parameters=["@p0='?', @p1='?', @p2='?', @p3='?' (Size = 9), @p4='?' (Size = 5), @p5='?'"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO \"Invoices\" (\"CustomerId\", \"DiscountedAmount\", \"InvoiceDate\", \"InvoiceNo\", \"ItemPurchasedCategory\", \"TotalAmount\")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT \"Id\"
+FROM \"Invoices\"
+WHERE changes() = 1 AND \"rowid\" = last_insert_rowid();"
+2021-03-09 06:38:48.099 +01:00 [Error] An exception occurred in the database while saving changes for context type '"Habaripay.ShopsRUs.Data.ShopsRUsContext"'."
+""Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'UNIQUE constraint failed: Invoices.InvoiceNo'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.Storage.NonRetryingExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)"
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'UNIQUE constraint failed: Invoices.InvoiceNo'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.Storage.NonRetryingExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2021-03-09 06:38:48.235 +01:00 [Error] An error occured during miigration
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'UNIQUE constraint failed: Invoices.InvoiceNo'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.Storage.NonRetryingExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at Habaripay.ShopsRUs.Data.Seed.SeedData(ShopsRUsContext context) in C:\Apps\Habaripay.ShopsRUs\Habaripay.ShopsRUs.Data\Seed.cs:line 71
+   at Habaripay.ShopsRUs.Api.Program.DoMigration(IHost host) in C:\Apps\Habaripay.ShopsRUs\Habaripay.ShopsRUs.Api\Program.cs:line 65
+2021-03-09 06:41:43.413 +01:00 [Information] Request: InvoiceRequest { CustomerId: 5, Amount: 150, ItemPurchased: "food" }
+2021-03-09 06:43:10.572 +01:00 [Information] Starting web host
+2021-03-09 06:49:17.004 +01:00 [Information] Starting web host
+2021-03-09 06:49:18.535 +01:00 [Error] Failed executing DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE \"Customers\" (
+    \"Id\" INTEGER NOT NULL CONSTRAINT \"PK_Customers\" PRIMARY KEY AUTOINCREMENT,
+    \"LastName\" TEXT NULL,
+    \"FirstName\" TEXT NULL,
+    \"Phone\" TEXT NULL,
+    \"Email\" TEXT NULL,
+    \"Address\" TEXT NULL,
+    \"EntryDate\" TEXT NOT NULL,
+    \"IsEmployee\" INTEGER NOT NULL,
+    \"IsAffiliate\" INTEGER NOT NULL
+);"
+2021-03-09 06:49:18.643 +01:00 [Error] An error occured during miigration
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'table "Customers" already exists'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteNonQuery()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQuery(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Migrations.MigrationCommand.ExecuteNonQuery(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Migrations.Internal.MigrationCommandExecutor.ExecuteNonQuery(IEnumerable`1 migrationCommands, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Migrations.Internal.Migrator.Migrate(String targetMigration)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.Migrate(DatabaseFacade databaseFacade)
+   at Habaripay.ShopsRUs.Api.Program.DoMigration(IHost host) in C:\Apps\Habaripay.ShopsRUs\Habaripay.ShopsRUs.Api\Program.cs:line 63
+2021-03-09 06:50:52.602 +01:00 [Information] Starting web host
+2021-03-09 06:50:53.902 +01:00 [Error] Failed executing DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE \"Customers\" (
+    \"Id\" INTEGER NOT NULL CONSTRAINT \"PK_Customers\" PRIMARY KEY AUTOINCREMENT,
+    \"LastName\" TEXT NULL,
+    \"FirstName\" TEXT NULL,
+    \"Phone\" TEXT NULL,
+    \"Email\" TEXT NULL,
+    \"Address\" TEXT NULL,
+    \"EntryDate\" TEXT NOT NULL,
+    \"IsEmployee\" INTEGER NOT NULL,
+    \"IsAffiliate\" INTEGER NOT NULL
+);"
+2021-03-09 06:50:54.020 +01:00 [Error] An error occured during miigration
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'table "Customers" already exists'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteNonQuery()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQuery(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Migrations.MigrationCommand.ExecuteNonQuery(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Migrations.Internal.MigrationCommandExecutor.ExecuteNonQuery(IEnumerable`1 migrationCommands, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Migrations.Internal.Migrator.Migrate(String targetMigration)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.Migrate(DatabaseFacade databaseFacade)
+   at Habaripay.ShopsRUs.Api.Program.DoMigration(IHost host) in C:\Apps\Habaripay.ShopsRUs\Habaripay.ShopsRUs.Api\Program.cs:line 63
+2021-03-09 06:51:33.117 +01:00 [Information] Starting web host
+2021-03-09 06:51:35.080 +01:00 [Error] Failed executing DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE \"Customers\" (
+    \"Id\" INTEGER NOT NULL CONSTRAINT \"PK_Customers\" PRIMARY KEY AUTOINCREMENT,
+    \"LastName\" TEXT NULL,
+    \"FirstName\" TEXT NULL,
+    \"Phone\" TEXT NULL,
+    \"Email\" TEXT NULL,
+    \"Address\" TEXT NULL,
+    \"EntryDate\" TEXT NOT NULL,
+    \"IsEmployee\" INTEGER NOT NULL,
+    \"IsAffiliate\" INTEGER NOT NULL
+);"
+2021-03-09 06:51:35.139 +01:00 [Error] An error occured during miigration
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'table "Customers" already exists'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteNonQuery()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQuery(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Migrations.MigrationCommand.ExecuteNonQuery(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Migrations.Internal.MigrationCommandExecutor.ExecuteNonQuery(IEnumerable`1 migrationCommands, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Migrations.Internal.Migrator.Migrate(String targetMigration)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.Migrate(DatabaseFacade databaseFacade)
+   at Habaripay.ShopsRUs.Api.Program.DoMigration(IHost host) in C:\Apps\Habaripay.ShopsRUs\Habaripay.ShopsRUs.Api\Program.cs:line 63
+2021-03-09 06:55:41.636 +01:00 [Information] Starting web host
+2021-03-09 07:02:14.980 +01:00 [Information] Starting web host
+2021-03-09 07:02:47.109 +01:00 [Error] An exception occurred in the database while saving changes for context type '"Habaripay.ShopsRUs.Data.ShopsRUsContext"'."
+""Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 5: 'database is locked'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteNonQuery()
+   at Microsoft.Data.Sqlite.SqliteConnectionExtensions.ExecuteNonQuery(SqliteConnection connection, String commandText, SqliteParameter[] parameters)
+   at Microsoft.Data.Sqlite.SqliteTransaction..ctor(SqliteConnection connection, IsolationLevel isolationLevel, Boolean deferred)
+   at Microsoft.Data.Sqlite.SqliteConnection.BeginTransaction(IsolationLevel isolationLevel, Boolean deferred)
+   at Microsoft.Data.Sqlite.SqliteConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Microsoft.Data.Sqlite.SqliteConnection.BeginDbTransaction(IsolationLevel isolationLevel)
+   at System.Data.Common.DbConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction()
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.Storage.NonRetryingExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)"
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 5: 'database is locked'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteNonQuery()
+   at Microsoft.Data.Sqlite.SqliteConnectionExtensions.ExecuteNonQuery(SqliteConnection connection, String commandText, SqliteParameter[] parameters)
+   at Microsoft.Data.Sqlite.SqliteTransaction..ctor(SqliteConnection connection, IsolationLevel isolationLevel, Boolean deferred)
+   at Microsoft.Data.Sqlite.SqliteConnection.BeginTransaction(IsolationLevel isolationLevel, Boolean deferred)
+   at Microsoft.Data.Sqlite.SqliteConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Microsoft.Data.Sqlite.SqliteConnection.BeginDbTransaction(IsolationLevel isolationLevel)
+   at System.Data.Common.DbConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction()
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.Storage.NonRetryingExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2021-03-09 07:02:47.233 +01:00 [Error] An error occured during miigration
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 5: 'database is locked'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteNonQuery()
+   at Microsoft.Data.Sqlite.SqliteConnectionExtensions.ExecuteNonQuery(SqliteConnection connection, String commandText, SqliteParameter[] parameters)
+   at Microsoft.Data.Sqlite.SqliteTransaction..ctor(SqliteConnection connection, IsolationLevel isolationLevel, Boolean deferred)
+   at Microsoft.Data.Sqlite.SqliteConnection.BeginTransaction(IsolationLevel isolationLevel, Boolean deferred)
+   at Microsoft.Data.Sqlite.SqliteConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Microsoft.Data.Sqlite.SqliteConnection.BeginDbTransaction(IsolationLevel isolationLevel)
+   at System.Data.Common.DbConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction()
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.Storage.NonRetryingExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at Habaripay.ShopsRUs.Data.Seed.SeedData(ShopsRUsContext context) in C:\Apps\Habaripay.ShopsRUs\Habaripay.ShopsRUs.Data\Seed.cs:line 56
+   at Habaripay.ShopsRUs.Api.Program.DoMigration(IHost host) in C:\Apps\Habaripay.ShopsRUs\Habaripay.ShopsRUs.Api\Program.cs:line 65
+2021-03-09 07:03:22.741 +01:00 [Information] Request: InvoiceRequest { CustomerId: 6, Amount: 150, ItemPurchased: "food" }
+2021-03-09 07:04:20.491 +01:00 [Error] An exception occurred in the database while saving changes for context type '"Habaripay.ShopsRUs.Data.ShopsRUsContext"'."
+""Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 5: 'database is locked'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteNonQuery()
+   at Microsoft.Data.Sqlite.SqliteConnectionExtensions.ExecuteNonQuery(SqliteConnection connection, String commandText, SqliteParameter[] parameters)
+   at Microsoft.Data.Sqlite.SqliteTransaction..ctor(SqliteConnection connection, IsolationLevel isolationLevel, Boolean deferred)
+   at Microsoft.Data.Sqlite.SqliteConnection.BeginTransaction(IsolationLevel isolationLevel, Boolean deferred)
+   at Microsoft.Data.Sqlite.SqliteConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Microsoft.Data.Sqlite.SqliteConnection.BeginDbTransaction(IsolationLevel isolationLevel)
+   at System.Data.Common.DbConnection.BeginDbTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)"
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 5: 'database is locked'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteNonQuery()
+   at Microsoft.Data.Sqlite.SqliteConnectionExtensions.ExecuteNonQuery(SqliteConnection connection, String commandText, SqliteParameter[] parameters)
+   at Microsoft.Data.Sqlite.SqliteTransaction..ctor(SqliteConnection connection, IsolationLevel isolationLevel, Boolean deferred)
+   at Microsoft.Data.Sqlite.SqliteConnection.BeginTransaction(IsolationLevel isolationLevel, Boolean deferred)
+   at Microsoft.Data.Sqlite.SqliteConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Microsoft.Data.Sqlite.SqliteConnection.BeginDbTransaction(IsolationLevel isolationLevel)
+   at System.Data.Common.DbConnection.BeginDbTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2021-03-09 07:04:20.685 +01:00 [Error] An unhandled exception has occurred while executing the request.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 5: 'database is locked'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteNonQuery()
+   at Microsoft.Data.Sqlite.SqliteConnectionExtensions.ExecuteNonQuery(SqliteConnection connection, String commandText, SqliteParameter[] parameters)
+   at Microsoft.Data.Sqlite.SqliteTransaction..ctor(SqliteConnection connection, IsolationLevel isolationLevel, Boolean deferred)
+   at Microsoft.Data.Sqlite.SqliteConnection.BeginTransaction(IsolationLevel isolationLevel, Boolean deferred)
+   at Microsoft.Data.Sqlite.SqliteConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Microsoft.Data.Sqlite.SqliteConnection.BeginDbTransaction(IsolationLevel isolationLevel)
+   at System.Data.Common.DbConnection.BeginDbTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Habaripay.ShopsRUs.Service.Uow.UnitOfWork.CompleteAsync() in C:\Apps\Habaripay.ShopsRUs\Habaripay.ShopsRUs.Service\Uow\UnitOfWork.cs:line 28
+   at Habaripay.ShopsRUs.Service.InvoiceService.GetTotalInvoiceAmount(InvoiceRequest request) in C:\Apps\Habaripay.ShopsRUs\Habaripay.ShopsRUs.Service\Services\InvoiceService.cs:line 100
+   at Habaripay.ShopsRUs.Api.Controllers.V1.InvoiceController.CreateDiscount(InvoiceRequest model) in C:\Apps\Habaripay.ShopsRUs\Habaripay.ShopsRUs.Api\Controllers\V1\InvoiceController.cs:line 34
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2021-03-09 07:04:44.839 +01:00 [Information] Request: InvoiceRequest { CustomerId: 6, Amount: 150, ItemPurchased: "food" }
+2021-03-09 07:08:39.446 +01:00 [Information] Starting web host
+2021-03-09 07:11:07.366 +01:00 [Information] Request: InvoiceRequest { CustomerId: 6, Amount: 120, ItemPurchased: "food" }
+2021-03-09 07:12:03.400 +01:00 [Information] Response: InvoiceResponse { CustomerId: 6, InvoiceNo: "INV-F2EA3F95", InvoiceDate: 03/09/2021 07:12:03, TotalAmount: 120, DiscountedAmount: 12.0, TotalPayeableAmount: 108.0, ItemPurchasedCategory: "food" }
+2021-03-09 07:15:41.045 +01:00 [Information] Starting web host
+2021-03-09 07:16:17.364 +01:00 [Information] Request: InvoiceRequest { CustomerId: 11, Amount: 200, ItemPurchased: "food" }
+2021-03-09 07:17:09.353 +01:00 [Information] Response: InvoiceResponse { CustomerId: 11, InvoiceNo: "INV-3FF7FB95", InvoiceDate: 03/09/2021 07:17:09, TotalAmount: 200, DiscountedAmount: 10.0, TotalPayeableAmount: 190.0, ItemPurchasedCategory: "food" }
+2021-03-09 07:25:02.001 +01:00 [Information] Starting web host
+2021-03-09 07:26:12.768 +01:00 [Information] Request: InvoiceRequest { CustomerId: 1003, Amount: 120, ItemPurchased: "food" }
+2021-03-09 07:28:41.231 +01:00 [Information] Response: InvoiceResponse { CustomerId: 1003, InvoiceNo: "INV-CD50C0E7", InvoiceDate: 03/09/2021 07:28:41, TotalAmount: 120, DiscountedAmount: 5.0, TotalPayeableAmount: 115.0, ItemPurchasedCategory: "food" }
+2021-03-09 07:32:38.442 +01:00 [Information] Request: InvoiceRequest { CustomerId: 1003, Amount: 120, ItemPurchased: "food" }
+2021-03-09 07:36:43.042 +01:00 [Information] Starting web host
+2021-03-09 07:37:14.393 +01:00 [Information] Request: InvoiceRequest { CustomerId: 1003, Amount: 120, ItemPurchased: "food" }
+2021-03-09 07:40:24.036 +01:00 [Information] Starting web host
+2021-03-09 07:40:56.909 +01:00 [Information] Request: InvoiceRequest { CustomerId: 1003, Amount: 90, ItemPurchased: "food" }
+2021-03-09 07:44:37.758 +01:00 [Information] Starting web host
+2021-03-09 07:44:59.202 +01:00 [Information] Request: InvoiceRequest { CustomerId: 1003, Amount: 90, ItemPurchased: "food" }
+2021-03-09 08:01:28.858 +01:00 [Information] Starting web host
+2021-03-09 08:02:18.698 +01:00 [Information] Request: InvoiceRequest { CustomerId: 1003, Amount: 20, ItemPurchased: "food" }
+2021-03-09 08:07:53.051 +01:00 [Information] Starting web host
+2021-03-09 08:08:21.424 +01:00 [Information] Request: InvoiceRequest { CustomerId: 1003, Amount: 120, ItemPurchased: "food" }
+2021-03-09 08:09:14.354 +01:00 [Information] Starting web host
+2021-03-09 08:10:14.492 +01:00 [Information] Request: InvoiceRequest { CustomerId: 1003, Amount: 10, ItemPurchased: "food" }
+2021-03-09 08:11:53.091 +01:00 [Information] Starting web host
+2021-03-09 08:12:56.329 +01:00 [Information] Starting web host
+2021-03-09 08:13:24.446 +01:00 [Information] Request: InvoiceRequest { CustomerId: 1003, Amount: 20, ItemPurchased: "food" }
+2021-03-09 08:15:18.706 +01:00 [Information] Starting web host
+2021-03-09 08:16:14.815 +01:00 [Information] Request: InvoiceRequest { CustomerId: 1003, Amount: 20, ItemPurchased: "food" }
+2021-03-09 08:21:19.664 +01:00 [Information] Starting web host
+2021-03-09 08:22:01.139 +01:00 [Information] Request: InvoiceRequest { CustomerId: 1003, Amount: 20, ItemPurchased: "food" }
+2021-03-09 08:24:54.671 +01:00 [Information] Response: InvoiceResponse { CustomerId: 1003, InvoiceNo: "INV-642F29B0", InvoiceDate: 03/09/2021 08:24:53, TotalAmount: 20, DiscountedAmount: 1.0, TotalPayeableAmount: 19.0, ItemPurchasedCategory: "food" }
+2021-03-09 08:28:43.942 +01:00 [Information] Request: InvoiceRequest { CustomerId: 1003, Amount: 20, ItemPurchased: "food" }
+2021-03-09 08:29:26.520 +01:00 [Information] Response: InvoiceResponse { CustomerId: 1003, InvoiceNo: "INV-07A851DD", InvoiceDate: 03/09/2021 08:29:26, TotalAmount: 20, DiscountedAmount: 1.0, TotalPayeableAmount: 19.0, ItemPurchasedCategory: "food" }
+2021-03-09 08:29:37.021 +01:00 [Information] Request: InvoiceRequest { CustomerId: 1003, Amount: 990, ItemPurchased: "food" }
+2021-03-09 08:45:02.494 +01:00 [Information] Response: InvoiceResponse { CustomerId: 1003, InvoiceNo: "INV-21048857", InvoiceDate: 03/09/2021 08:45:02, TotalAmount: 990, DiscountedAmount: 49.5, TotalPayeableAmount: 940.5, ItemPurchasedCategory: "food" }
+2021-03-09 08:46:27.045 +01:00 [Information] Request: InvoiceRequest { CustomerId: 1003, Amount: 990, ItemPurchased: "groceries" }
+2021-03-09 08:47:52.852 +01:00 [Information] Response: InvoiceResponse { CustomerId: 1003, InvoiceNo: "INV-152B61DA", InvoiceDate: 03/09/2021 08:47:52, TotalAmount: 990, DiscountedAmount: 45.0, TotalPayeableAmount: 945.0, ItemPurchasedCategory: "groceries" }
+2021-03-09 08:52:32.987 +01:00 [Information] Request: InvoiceRequest { CustomerId: 1001, Amount: 120, ItemPurchased: "food" }
+2021-03-09 08:58:51.063 +01:00 [Information] Starting web host
+2021-03-09 09:00:16.968 +01:00 [Information] Request: InvoiceRequest { CustomerId: 1001, Amount: 90, ItemPurchased: "food" }
+2021-03-09 09:01:05.269 +01:00 [Information] Response: InvoiceResponse { CustomerId: 1001, InvoiceNo: "INV-D9DA9DA0", InvoiceDate: 03/09/2021 09:01:05, TotalAmount: 90, DiscountedAmount: 27.0, TotalPayeableAmount: 63.0, ItemPurchasedCategory: "food" }
